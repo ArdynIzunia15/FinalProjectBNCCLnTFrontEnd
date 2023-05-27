@@ -1,0 +1,14 @@
+body{
+    background-color: #1D267D;
+    display: flex;
+    justify-content: center;
+}
+
+.card-style{
+    align-items: center;
+    min-width: 400px;
+}
+
+.typography-style{
+    text-align: center;
+}

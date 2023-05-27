@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #0C134F;
+    --secondary-color: #1D267D;
+    --accent-color: #5C469C;
+    --highlight-color: #D4ADFC;
+}
+
+*{
+    color: black;
+    overflow: hidden;
+}
+
+button{
+    background-color: var(--primary-color);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20%;
+}
+
+.form-control-style{
+    width: 500px;
+}
+
+h1{
+    margin: auto;
+}
