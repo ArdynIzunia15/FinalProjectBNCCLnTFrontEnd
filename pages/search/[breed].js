@@ -1,7 +1,6 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { useRouter } from "next/router";
 import { useState, useEffect, Component } from "react";
-import './breed.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const DogImageComponent = () => {
@@ -29,10 +28,10 @@ const DogImageComponent = () => {
   }, [breed]);
 
   return (
-    <div class="flex-column mt-5">
-      <Card className={"cardStyle"}>
+    <div class="flex-column w-25 justify-content-center d-flex position-absolute top-50 start-50 translate-middle">
+      <Card class="card">
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" className="typography-style">
+          <Typography gutterBottom variant="h5" component="div" class=" text-center">
             {breed}
           </Typography>
         </CardContent>
