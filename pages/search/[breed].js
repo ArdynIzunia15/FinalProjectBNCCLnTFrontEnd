@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography, Button } from "@mui/material";
 import { useRouter } from "next/router";
 import { useState, useEffect, Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,8 +27,12 @@ const DogImageComponent = () => {
     fetchData();
   }, [breed]);
 
+  const buttonClickHandler = () => {
+    window.location.href = '../';
+  };
+
   return (
-    <div class="flex-column w-25 justify-content-center d-flex position-absolute top-50 start-50 translate-middle">
+    <div class="flex-column w-25 justify-content-center d-flex position-absolute top-50 start-50 translate-middle gap-3">
       <Card class="card">
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" class=" text-center">
@@ -45,6 +49,10 @@ const DogImageComponent = () => {
           </div>
         )}
       </Card>
+      <Button
+      variant="contained"
+      color="secondary"
+      onClick={buttonClickHandler}>Back to search</Button>
     </div>
   );
 };
