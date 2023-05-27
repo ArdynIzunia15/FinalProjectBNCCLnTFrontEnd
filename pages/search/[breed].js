@@ -35,7 +35,11 @@ const DogImageComponent = () => {
     <div class="flex-column w-25 justify-content-center d-flex position-absolute top-50 start-50 translate-middle gap-3">
       <Card class="card">
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" class=" text-center">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            class=" text-center">
             {breed}
           </Typography>
         </CardContent>
@@ -50,9 +54,11 @@ const DogImageComponent = () => {
         )}
       </Card>
       <Button
-      variant="contained"
-      color="secondary"
-      onClick={buttonClickHandler}>Back to search</Button>
+        variant="contained"
+        color="secondary"
+        onClick={buttonClickHandler}>
+        Back to search
+      </Button>
     </div>
   );
 };
