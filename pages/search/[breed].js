@@ -1,7 +1,6 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { useRouter } from "next/router";
 import { useState, useEffect, Component } from "react";
-import './breed.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const DogImageComponent = () => {

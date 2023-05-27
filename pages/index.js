@@ -4,7 +4,6 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { Box, Button, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import './index.css'
 import { Router, useRouter } from "next/router";
 
 const DogComponent = () => {
