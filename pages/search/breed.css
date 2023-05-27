@@ -1,10 +1,15 @@
 body{
-    background-color: #1D267D;
+    background-color: #1D267D !important;
     display: flex;
     justify-content: center;
+    min-width: 100%;
 }
 
-.card-style{
+html{
+    min-width: 1000px;
+}
+
+.cardStyle{
     align-items: center;
     min-width: 400px;
 }
@@ -12,3 +17,4 @@ body{
 .typography-style{
     text-align: center;
 }
+

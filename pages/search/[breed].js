@@ -1,7 +1,8 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Component } from "react";
 import './breed.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const DogImageComponent = () => {
   const [imageUrl, setImageUrl] = useState("");
@@ -28,8 +29,8 @@ const DogImageComponent = () => {
   }, [breed]);
 
   return (
-    <div className="container">
-      <Card className="card-style">
+    <div class="flex-column mt-5">
+      <Card className={"cardStyle"}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" className="typography-style">
             {breed}
@@ -48,5 +49,6 @@ const DogImageComponent = () => {
     </div>
   );
 };
+  
 
 export default DogImageComponent;
